@@ -1,0 +1,173 @@
+INICIO
+
+VAR: op: ENTERO
+VAR: op2<--'a': CARACTER
+
+Hacer{
+Imprimir"UEFA CAMPION LEAGUE 2018-19"
+Imprimir"1.- 8vos de final"
+Imprimir"2.- 4tos de final"
+Imprimir"3.- Final"
+Imprimir"4.- Campeon"
+
+Hacer{
+	Imprimir"Seleccione una opcion (1-5): "
+	leer op
+
+	si(op<=0 OR op >=6)
+	{
+		Imprimir"Opcion incorrecta"
+		Imprimir"Ingrese de nuevo una opcion"
+	}
+	fin_del_si
+	}mientras (op <=0 OR >=6)
+
+Casos para "op"
+
+caso 1:
+Imprimir"            ***8vos de final***"
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"| SCHALKE 04 |   \/    ____|  |    M.CITY   |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"|  ATLÉTICO  |   \/    ____|  |   JUVENTUS  |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"|  M.UNITED  |   \/    ____|  |     PSG     |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"| TOTTENHAM  |   \/    ____|  | B. DORTMUND |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"|   LYION    |   \/    ____|  |  BARCELONA  |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"|    ROMA    |   \/    ____|  |    OPORTO   |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"|   AJAX     |   \/    ____|  | REAL MADRID |
+Imprimir"|____________|                |_____________|
+Imprimir" ____________          ____    _____________
+Imprimir"|            |  \  /  |____   |             |   
+Imprimir"|  LIVERPOOL |   \/    ____|  |    BAYERN   |
+Imprimir"|____________|                |_____________|
+fin_del_si
+
+Caso 2
+Imprimir"             ***4tos de final***
+Imprimir" _____________          ____    _____________
+Imprimir"|             |  \  /  |____   |             |
+Imprimir"|  TOTTENHAM  |   \/    ____|  |    M.CITY   |
+Imprimir"|_____________|                |_____________|
+Imprimir" _____________          ____    _____________
+Imprimir"|             |  \  /  |____   |             |
+Imprimir"|    AJAX     |   \/    ____|  |   JUVENTUS  |
+Imprimir"|_____________|                |_____________|
+Imprimir" _____________          ____    _____________
+Imprimir"|             |  \  /  |____   |             |
+Imprimir"|  M.UNITED   |   \/    ____|  |  BARCELONA  |
+Imprimir"|_____________|                |_____________|
+Imprimir" _____________          ____    _____________
+Imprimir"|             |  \  /  |____   |             |
+Imprimir"|   OPORTO    |   \/    ____|  |  LIVERPOOL  |
+Imprimir"|_____________|                |_____________|
+fin_del_caso
+
+Caso 3
+Imprimir"                 ***FINAL***
+Imprimir" _____________          ____    _____________
+Imprimir"|             |  \  /  |____   |             |
+Imprimir"|  TOTTENHAM  |   \/    ____|  |  LIVERPOOL  |
+Imprimir"|_____________|                |_____________|
+fin_del_caso
+
+Caso 4
+Imprimir"              ***CAMPEON***
+Imprimir"              _____________
+Imprimir"             |             |
+Imprimir"             |  LIVERPOOL  |
+Imprimir"             |_____________|
+fin_del_caso
+
+Caso 5
+Imprimir" _____________
+Imprimir"|             |
+Imprimir"|  TOTTENHAM  |---    _____________
+Imprimir"|_____________|   |  |             |
+Imprimir" _____________    |--|  TOTTENHAM  |--
+Imprimir"|             |   |  |_____________|  |
+Imprimir"| B. DORTMUND |---                    |
+Imprimir"|_____________|                       |
+Imprimir" _____________                        |----------
+Imprimir"|             |                       |          |
+Imprimir"| SCHALKE 04  |---    _____________   |          |
+Imprimir"|_____________|   |  |             |  |          |
+Imprimir" _____________    |--|   M.CITY    |--           |
+Imprimir"|             |   |  |_____________|             |
+Imprimir"|   M.CITY    |---                               |      ______________
+Imprimir"|_____________|                                  |     |              |
+Imprimir" _____________                                   |-----|   TOTTENHAM  |----
+Imprimir"|             |                                  |     |______________|    |
+Imprimir"|    AJAX     |---    _____________              |                         |
+Imprimir"|_____________|   |  |             |             |                         |
+Imprimir" _____________    |--|    AJAX     |--           |                         |
+Imprimir"|             |   |  |_____________|  |          |                         |
+Imprimir"| REAL MADRID |---                    |          |                         |
+Imprimir"|_____________|                       |          |                         |
+Imprimir" _____________                        |----------                          |
+Imprimir"|             |                       |                                    |
+Imprimir"|   ATLETICO  |---    _____________   |                                    |
+Imprimir"|_____________|   |  |             |  |                                    |
+Imprimir" _____________    |--|   JUVENTUS  |--                                     |
+Imprimir"|             |   |  |_____________|                                       |
+Imprimir"|   JUVENTUS  |---                                                         |     ______________
+Imprimir"|_____________|                                                            |    |              |
+Imprimir" _____________                                                             |----|   LIVERPOOL  |
+Imprimir"|             |                                                            |    |______________|
+Imprimir"|   M.UNITED  |---    _____________                                        |
+Imprimir"|_____________|   |  |             |                                       |
+Imprimir" _____________    |--|   M.UNITED  |--                                     |
+Imprimir"|             |   |  |_____________|  |                                    |
+Imprimir"|     PSG     |---                    |                                    |
+Imprimir"|_____________|                       |                                    |
+Imprimir" _____________                        |----------                          |
+Imprimir"|             |                       |          |                         |
+Imprimir"|    LYION    |---    _____________   |          |                         |
+Imprimir"|_____________|   |  |             |  |          |                         |
+Imprimir" _____________    |--|  BARCELONA  |--           |                         |
+Imprimir"|             |   |  |_____________|             |                         |
+Imprimir"|  BARCELONA  |---                               |      ______________     |
+Imprimir"|_____________|                                  |     |              |    |
+Imprimir" _____________                                   |-----|   LIVERPOOL  |----
+Imprimir"|             |                                  |     |______________|
+Imprimir"|    ROMA     |---    _____________              |
+Imprimir"|_____________|   |  |             |             |
+Imprimir" _____________    |--|   OPORTO    |--           |
+Imprimir"|             |   |  |_____________|  |          |
+Imprimir"|   OPORTO    |---                    |          |
+Imprimir"|_____________|                       |          |
+Imprimir" _____________                        |----------
+Imprimir"|             |                       |
+Imprimir"|   BAYERN    |---    _____________   |
+Imprimir"|_____________|   |  |             |  |  
+Imprimir" _____________    |--|  LIVERPOOL  |--
+Imprimir"|             |   |  |_____________|
+Imprimir"|  LIVERPOOL  |---
+Imprimir"|_____________|
+fin_del_caso
+
+Caso 6
+Imprimir"Elegiste salir"
+FIN
+fin_del_caso
+
+Imprimir"Presiona cualquir cualquier tecla para continuar <ENTER>..."
+}mientras(op='a')
+FIN
